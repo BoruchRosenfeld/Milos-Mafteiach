@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hebrew Concepts Study Guide</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+    .wheel {
+      position: relative;
+      height: 200px;
+      width: 300px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background: white;
+    }
+    .wheel-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s;
+    }
+    .wheel div {
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      transition: opacity 0.3s, transform 0.3s;
+      cursor: pointer;
+    }
+    .wheel div.level-2 {
+      opacity: 0.2;
+      transform: scale(0.9);
+    }
+    .wheel div.level-1 {
+      opacity: 0.5;
+      transform: scale(0.95);
+    }
+    .wheel div.selected {
+      opacity: 1;
+      font-weight: bold;
+      background: #d0ebff;
+      transform: scale(1.05);
+    }
+    .details {
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      background: white;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .details h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hebrew Concepts</h1>
+  <div class="wheel">
+    <div class="wheel-inner" id="conceptWheel"></div>
+  </div>
+  <div class="details" id="details">
+    <h2>Select a concept</h2>
+    <p><strong>Definition:</strong> <span id="definition"></span></p>
+    <p><strong>Classification:</strong> <span id="classification"></span></p>
+    <p><strong>Explanation:</strong> <span id="explanation"></span></p>
+  </div>
+
+  <script>
+  const wheel = document.getElementById('conceptWheel');
+  const definition = document.getElementById('definition');
+  const classification = document.getElementById('classification');
+  const explanation = document.getElementById('explanation');
+
+  let concepts = [];
+  let currentIndex = 2;
+
+  function renderWheel() {
+    wheel.innerHTML = '';
+    for (let i = currentIndex - 2; i <= currentIndex + 2; i++) {
+      const div = document.createElement('div');
+      const concept = concepts[(i + concepts.length) % concepts.length]; // loop around
+
+      div.textContent = concept.word;
+      div.classList.add(i === currentIndex ? 'selected' :
+        Math.abs(i - currentIndex) === 1 ? 'level-1' : 'level-2');
+
+      div.addEventListener('click', () => {
+        currentIndex = (i + concepts.length) % concepts.length;
+        updateDetails();
+        renderWheel();
+      });
+
+      wheel.appendChild(div);
+    }
+  }
+
+  function updateDetails() {
+    const concept = concepts[currentIndex];
+    definition.textContent = concept.translation;
+    classification.textContent = concept.classification;
+    explanation.textContent = concept.explanation;
+  }
+
+  async function loadConcepts() {
+    try {
+      const response = await fetch('hebrew_concepts.json'); // or 'data/hebrew_concepts.json' if you move it
+      concepts = await response.json();
+      currentIndex = 2;
+      updateDetails();
+      renderWheel();
+    } catch (error) {
+      console.error("Failed to load concepts:", error);
+    }
+  }
+
+  loadConcepts();
+</script>
+</body>
+</html>
