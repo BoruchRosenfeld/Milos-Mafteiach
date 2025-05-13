@@ -1,0 +1,422 @@
+[
+  {
+    "word": "(אין לי אלא)... מנין",
+    "translation": "from where do I know…",
+    "classification": "שאלאה",
+    "explanation": "asking for the source of a דין."
+  },
+  {
+    "word": "אי הכי",
+    "translation": "if so",
+    "classification": "שאלאה",
+    "explanation": "asking on a suggested answer or explanation that it creates a new problem"
+  },
+  {
+    "word": "איבעיא להו",
+    "translation": "they inquired",
+    "classification": "שאלאה",
+    "explanation": "inquiring which of 2 ways to understand something is correct"
+  },
+  {
+    "word": "איבעית אימא",
+    "translation": "if you want you can say",
+    "classification": "תירץ",
+    "explanation": "bringing an additional answer"
+  },
+  {
+    "word": "איכא בינייהו",
+    "translation": "There is (a difference) between them",
+    "classification": "תירץ",
+    "explanation": "answering a מאי בינייהו question."
+  },
+  {
+    "word": "איכא דאמרי",
+    "translation": "There are those that say",
+    "classification": "פתיחה",
+    "explanation": "bringing another version of a statement (or sugya)"
+  },
+  {
+    "word": "איכא דמתני",
+    "translation": "There are those that learn",
+    "classification": "פתיחה",
+    "explanation": "bringing another version on what a statement was said."
+  },
+  {
+    "word": "אילימא",
+    "translation": "if you will say",
+    "classification": "שאלאה",
+    "explanation": "saying you can't answer something becase it won't work"
+  },
+  {
+    "word": "אימא סיפא",
+    "translation": "but we learnd in the סיפא",
+    "classification": "שאלאה",
+    "explanation": "challenging an explanation of the רישא from the סיפא"
+  },
+  {
+    "word": "איני (והא...)",
+    "translation": "is it so (but…)",
+    "classification": "שאלאה",
+    "explanation": "challenging a statement by showing that it seemingly can't be true"
+  },
+  {
+    "word": "איתביה",
+    "translation": "he challenged",
+    "classification": "שאלאה",
+    "explanation": "challenging a statement from a higher source (usually a תנא on an אמורא)"
+  },
+  {
+    "word": "איתמר",
+    "translation": "it was stated",
+    "classification": "פתיחה",
+    "explanation": "bringing a statement of אמוראים (usually a מחלוקת)"
+  },
+  {
+    "word": "אלא",
+    "translation": "rather",
+    "classification": "תירץ",
+    "explanation": "answering a question using a new approach"
+  },
+  {
+    "word": "אלא מעתה",
+    "translation": "according to this",
+    "classification": "שאלאה",
+    "explanation": "asking on a suggested answer or explanation that it creates a new problem"
+  },
+  {
+    "word": "אמאי",
+    "translation": "why",
+    "classification": "שאלאה",
+    "explanation": "asking why a דין is a certain way (when it seems like it should be different)."
+  },
+  {
+    "word": "אמר מר",
+    "translation": "master said",
+    "classification": "פתיחה",
+    "explanation": "bringing something we mentioned earlier to analyze it further"
+  },
+  {
+    "word": "אפילו תימא",
+    "translation": "you can even say",
+    "classification": "תירץ",
+    "explanation": ",after being forced to say something is only according to some, answering that we can fit it according to others."
+  },
+  {
+    "word": "בשלמא",
+    "translation": "it fits well",
+    "classification": "שאלאה",
+    "explanation": "asking that although one case or opinion fits well, the other one doesn't"
+  },
+  {
+    "word": "גופא",
+    "translation": "the text itself",
+    "classification": "פתיחה",
+    "explanation": "bringing something we mentioned earlier to analyze it further"
+  },
+  {
+    "word": "דאמר קרא",
+    "translation": "like the פסוק says",
+    "classification": "ראיה",
+    "explanation": "bringing a proof for something from a פסוק"
+  },
+  {
+    "word": "דיקא נמי",
+    "translation": "this is also implied",
+    "classification": "ראיה",
+    "explanation": "proving from the text itself that a suggested answer or explanation is correct"
+  },
+  {
+    "word": "דכתיב",
+    "translation": "like it says in the פסוק",
+    "classification": "ראיה",
+    "explanation": "bringing a proof for something from a פסוק"
+  },
+  {
+    "word": "דתניא",
+    "translation": "like we learned in a ברייתא",
+    "classification": "ראיה",
+    "explanation": "bringing a proof for something from a ברייתא"
+  },
+  {
+    "word": "דתנן",
+    "translation": "like we learned in a משנה",
+    "classification": "ראיה",
+    "explanation": "bringing a proof for something from a משנה"
+  },
+  {
+    "word": "היכי דמי",
+    "translation": "what is the case",
+    "classification": "שאלאה",
+    "explanation": "asking what case we are dealing with"
+  },
+  {
+    "word": "היכי משכחת לה",
+    "translation": "How is it found?",
+    "classification": "שאלאה",
+    "explanation": "asking what practical case a דין would apply to."
+  },
+  {
+    "word": "הכא במאי עסקינן",
+    "translation": "here with what are we dealing",
+    "classification": "תירץ",
+    "explanation": "answering a question by saying we are dealing with a specific case"
+  },
+  {
+    "word": "הכי קאמר",
+    "translation": "this is what he is saying",
+    "classification": "תירץ",
+    "explanation": "answering a question by saying we misunderstood the original statement and he really meant…"
+  },
+  {
+    "word": "הני מילי",
+    "translation": "when do these words apply",
+    "classification": "ביאור",
+    "explanation": "explaining which case(s) we are dealing with"
+  },
+  {
+    "word": "ואידך",
+    "translation": "and the other",
+    "classification": "שאלאה",
+    "explanation": "challenging the other opinion after the first one explained or proved his side"
+  },
+  {
+    "word": "ואם איתא",
+    "translation": "and if it is true",
+    "classification": "שאלאה",
+    "explanation": "asking that if a statement were true another statement would have been written differently"
+  },
+  {
+    "word": "והא",
+    "translation": "but…",
+    "classification": "שאלאה",
+    "explanation": "asking how can you say a דין, it seems like you can't because…"
+  },
+  {
+    "word": "והא תניא",
+    "translation": "but we learned in a ברייתא",
+    "classification": "שאלאה",
+    "explanation": "challenging a statement from a ברייתא"
+  },
+  {
+    "word": "והאמר",
+    "translation": "but he said",
+    "classification": "שאלאה",
+    "explanation": "challenging something from another statement"
+  },
+  {
+    "word": "והכתיב",
+    "translation": "but we learned in a פסוק",
+    "classification": "שאלאה",
+    "explanation": "challenging a statement from a פסוק"
+  },
+  {
+    "word": "והתנן",
+    "translation": "but we learned in a משנה",
+    "classification": "שאלאה",
+    "explanation": "challenging a statement from a משנה"
+  },
+  {
+    "word": "ורמינהו",
+    "translation": "but we have a contradiction",
+    "classification": "שאלאה",
+    "explanation": "bringing a contradiction between 2 equal sources"
+  },
+  {
+    "word": "ותיפוק לי'",
+    "translation": "let us learn it out",
+    "classification": "שאלאה",
+    "explanation": "asking that something could be learned out from another (simpler) source."
+  },
+  {
+    "word": "כי הא ד...",
+    "translation": "like this that…",
+    "classification": "ראיה",
+    "explanation": "bringing a proof for something from a story or statement"
+  },
+  {
+    "word": "כמאן",
+    "translation": "Like whom?",
+    "classification": "שאלאה",
+    "explanation": "is asking who a statemnt fits with (as it doesn't seem to fit with anybody)."
+  },
+  {
+    "word": "לא נצרכא אלא",
+    "translation": "it was only needed for",
+    "classification": "תירץ",
+    "explanation": "answering a question (often פשיטא or ה\"ד) by saying we are dealing with a specific case"
+  },
+  {
+    "word": "לא קשיא הא... הא...",
+    "translation": "it's not a question this… this…",
+    "classification": "תירץ",
+    "explanation": "resolving a contradiction by saying we are dealing with 2 different cases or opinions"
+  },
+  {
+    "word": "לימא",
+    "translation": "let us say",
+    "classification": "ביאור",
+    "explanation": "suggesting an explanation for something (which often we don't prefer to say) which often gets knocked off"
+  },
+  {
+    "word": "לעולם",
+    "translation": "really",
+    "classification": "תירץ",
+    "explanation": "going back to a previously rejected answer and showing how it really can work."
+  },
+  {
+    "word": "מאי",
+    "translation": "what",
+    "classification": "שאלאה",
+    "explanation": "asking what is meaning of something just mentioned"
+  },
+  {
+    "word": "מאי בינייהו",
+    "translation": "What is (the difference) between them?",
+    "classification": "שאלאה",
+    "explanation": "asking what practical difference these is between 2 opinions."
+  },
+  {
+    "word": "מאי ואומר",
+    "translation": "why does it bring a ואומר?",
+    "classification": "שאלאה",
+    "explanation": "asking why we needed to bring a second פסוק."
+  },
+  {
+    "word": "מאי טעמא",
+    "translation": "what is the reason",
+    "classification": "שאלאה",
+    "explanation": "asking what the reason for a דין is"
+  },
+  {
+    "word": "מאי קמ''ל",
+    "translation": "what is this teaching us",
+    "classification": "שאלאה",
+    "explanation": "asking why a דין needed to be said (if it seems obvious)"
+  },
+  {
+    "word": "מאי קרא",
+    "translation": "what is the פסוק",
+    "classification": "שאלאה",
+    "explanation": "asking for the source of a דין"
+  },
+  {
+    "word": "מאן תנא",
+    "translation": "who is the תנא",
+    "classification": "שאלאה",
+    "explanation": "asking who the author of a משנה or ברייתא is"
+  },
+  {
+    "word": "מהו דתימא",
+    "translation": "you would have thought to say",
+    "classification": "תירץ",
+    "explanation": "answering a question (like פשיטא) by saying we would have thought differently"
+  },
+  {
+    "word": "מחלוקת ב... אבל...",
+    "translation": "the argument is… but…",
+    "classification": "ביאור",
+    "explanation": "explaining when a certain מחלוקת applies and in which cases all would agree."
+  },
+  {
+    "word": "ממה נפשך",
+    "translation": "what is your desire to say?",
+    "classification": "שאלאה",
+    "explanation": "asking for the logic behind a דין because it seems like, whichever approach you take, it won't fit."
+  },
+  {
+    "word": "מנא הני מילי",
+    "translation": "from where are these words",
+    "classification": "שאלאה",
+    "explanation": "asking for the source of a דין"
+  },
+  {
+    "word": "מסתברא",
+    "translation": "this is logical",
+    "classification": "ראיה",
+    "explanation": "saying that a certain opinion or (suggested) answer is actually more logical."
+  },
+  {
+    "word": "מתקיף",
+    "translation": "he challenged",
+    "classification": "שאלאה",
+    "explanation": "challenging a statement using a סברא"
+  },
+  {
+    "word": "סימן",
+    "translation": "A סימן (to remember this)",
+    "classification": "פתיחה",
+    "explanation": "bringing a סימן to remember what comes next (before a sugya with multiple parts or opinions)."
+  },
+  {
+    "word": "פשיטא",
+    "translation": "it is obvious",
+    "classification": "שאלאה",
+    "explanation": "asking why a דין needed to be said (if it seems obvious)"
+  },
+  {
+    "word": "קסבר",
+    "translation": "he holds",
+    "classification": "ביאור",
+    "explanation": "explaining the reasoning behind a statement"
+  },
+  {
+    "word": "קשיא",
+    "translation": "it's a question",
+    "classification": "מסקנה",
+    "explanation": "concluding that something is problematic (although not necessarily incorrect)"
+  },
+  {
+    "word": "שאני התם",
+    "translation": "over there it is different",
+    "classification": "תירץ",
+    "explanation": "answering a contradiction by showing that there is a reason to differentiate between them"
+  },
+  {
+    "word": "שנאמר",
+    "translation": "like it says in the פסוק",
+    "classification": "ראיה",
+    "explanation": "bringing a proof for something from a פסוק"
+  },
+  {
+    "word": "תא שמע",
+    "translation": "come and hear",
+    "classification": "תירץ/ר",
+    "explanation": ",after a מחלוקת or an איבעיא להו, attempting to show which way is correct."
+  },
+  {
+    "word": "תיקו",
+    "translation": "the question remains",
+    "classification": "מסקנה",
+    "explanation": "letting an inquiry stand without answering it"
+  },
+  {
+    "word": "תנו רבנן",
+    "translation": "the רבנן learned",
+    "classification": "פתיחה",
+    "explanation": "bringing a statement from a well known ברייתא"
+  },
+  {
+    "word": "תניא",
+    "translation": "we learned in a ברייתא",
+    "classification": "פתיחה",
+    "explanation": "bringing a statement from a ברייתא"
+  },
+  {
+    "word": "תניא כוותי'",
+    "translation": "We learned in a ברייתא like the opinion of…",
+    "classification": "ראיה",
+    "explanation": "is supporting the opinion of an אמורא from a ברייתא."
+  },
+  {
+    "word": "תניא נמי הכי",
+    "translation": "we learned in a ברייתא also like this",
+    "classification": "ראיה",
+    "explanation": "proving something we just said or suggested from a ברייתא"
+  },
+  {
+    "word": "תנן",
+    "translation": "We learned in a משנה",
+    "classification": "פתיחה",
+    "explanation": "bringing a statement from a משנה"
+  }
+]
