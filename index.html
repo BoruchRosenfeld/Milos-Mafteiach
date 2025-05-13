@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milos Mafteiach - מילות מפתח Study Guide</title>
+  <title>Hebrew Concepts Study Guide</title>
   <style>
     body {
       font-family: sans-serif;
@@ -67,66 +67,66 @@
   </style>
 </head>
 <body>
-  <h1>Milos Mafteiach - מילות מפתח</h1>
+  <h1>Hebrew Concepts</h1>
   <div class="wheel">
     <div class="wheel-inner" id="conceptWheel"></div>
   </div>
   <div class="details" id="details">
-    <h2>Selected Milos Mafteiach:</h2>
+    <h2>Select a concept</h2>
     <p><strong>Definition:</strong> <span id="definition"></span></p>
     <p><strong>Classification:</strong> <span id="classification"></span></p>
     <p><strong>Explanation:</strong> <span id="explanation"></span></p>
   </div>
 
   <script>
-  const wheel = document.getElementById('conceptWheel');
-  const definition = document.getElementById('definition');
-  const classification = document.getElementById('classification');
-  const explanation = document.getElementById('explanation');
+    const wheel = document.getElementById('conceptWheel');
+    const definition = document.getElementById('definition');
+    const classification = document.getElementById('classification');
+    const explanation = document.getElementById('explanation');
 
-  let concepts = [];
-  let currentIndex = 2;
+    let concepts = [];
+    let currentIndex = 2;
 
-  function renderWheel() {
-    wheel.innerHTML = '';
-    for (let i = currentIndex - 2; i <= currentIndex + 2; i++) {
-      const div = document.createElement('div');
-      const concept = concepts[(i + concepts.length) % concepts.length]; // loop around
+    function renderWheel() {
+      wheel.innerHTML = '';
+      for (let i = currentIndex - 2; i <= currentIndex + 2; i++) {
+        const div = document.createElement('div');
+        const concept = concepts[(i + concepts.length) % concepts.length]; // loop around
 
-      div.textContent = concept.word;
-      div.classList.add(i === currentIndex ? 'selected' :
-        Math.abs(i - currentIndex) === 1 ? 'level-1' : 'level-2');
+        div.textContent = concept.word;
+        div.classList.add(i === currentIndex ? 'selected' :
+          Math.abs(i - currentIndex) === 1 ? 'level-1' : 'level-2');
 
-      div.addEventListener('click', () => {
-        currentIndex = (i + concepts.length) % concepts.length;
+        div.addEventListener('click', () => {
+          currentIndex = (i + concepts.length) % concepts.length;
+          updateDetails();
+          renderWheel();
+        });
+
+        wheel.appendChild(div);
+      }
+    }
+
+    function updateDetails() {
+      const concept = concepts[currentIndex];
+      definition.textContent = concept.translation;
+      classification.textContent = concept.classification;
+      explanation.textContent = concept.explanation;
+    }
+
+    async function loadConcepts() {
+      try {
+        const response = await fetch('hebrew_concepts.json');
+        concepts = await response.json();
+        currentIndex = 2;
         updateDetails();
         renderWheel();
-      });
-
-      wheel.appendChild(div);
+      } catch (error) {
+        console.error("Failed to load concepts:", error);
+      }
     }
-  }
 
-  function updateDetails() {
-    const concept = concepts[currentIndex];
-    definition.textContent = concept.translation;
-    classification.textContent = concept.classification;
-    explanation.textContent = concept.explanation;
-  }
-
-  async function loadConcepts() {
-    try {
-      const response = await fetch('hebrew_concepts.json'); // or 'data/hebrew_concepts.json' if you move it
-      concepts = await response.json();
-      currentIndex = 2;
-      updateDetails();
-      renderWheel();
-    } catch (error) {
-      console.error("Failed to load concepts:", error);
-    }
-  }
-
-  loadConcepts();
-</script>
+    loadConcepts();
+  </script>
 </body>
 </html>
