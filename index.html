@@ -126,6 +126,19 @@
       }
     }
 
+    window.addEventListener('keydown', (e) => {
+      if (!concepts.length) return;
+      if (e.key === 'ArrowUp') {
+        currentIndex = (currentIndex - 1 + concepts.length) % concepts.length;
+        updateDetails();
+        renderWheel();
+      } else if (e.key === 'ArrowDown') {
+        currentIndex = (currentIndex + 1) % concepts.length;
+        updateDetails();
+        renderWheel();
+      }
+    });
+
     loadConcepts();
   </script>
 </body>
